@@ -4,300 +4,87 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta name="description" content>
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title> Unswayed </title>
+      <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/cover/">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script" rel="stylesheet">
 
     <title>Unswayed</title>
-  </head>
-    <style>
-        body {
-            position: absolute;
-            margin: 0;
-            
+  
+<style>
+    body {
+        background-color: hsl(210,79%,30%);
+        color: white;
+    }
+    .bd-placeholder-img{
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+            font-size: 3.5rem;
         }
+    }
     
+    @keyframes news {
+     from{opacity: 0;}
+        to{opacity:1;}}
+    }
+    
+    #footer {
+        background-image: url(./breakingnews.png);
+        width: 70px;
+        height: 30px;
+        animation: news 1s infinite;
+    }
+</style>
+    <link href="cover.css" rel="stylesheet">
+    </head>
+<body class="text-center">
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    
+    <header class="masthead mb-auto">
+        <div class="inner">
+            <h1 class="masthead-brand"> Unswayed </h1>
+            <nav class="nav nav-masthead justify-content-center">
+                <a class="nav-link active" href="#"> Home </a>
+                <a class="nav-link" href="#"> Features </a>
+                <a class="nav-link" href="#"> Contact </a> <br> <br> <br>
+            
+            
+            </nav>       
+        </div>
+    </header>
+    <main role="main" class="inner cover">
+        <h1 class="cover-heading"> Get Unbias News Here.</h1>
+        <p class="lead">
+        Unswayed lets you read about news and current topics without any bias opinions so you can create your own opinion </p>
+        <p class="lead">
+            <a href="#" class="btn btn-lg btn-secondary"> Search News </a> <br> <br> <br> <br>
+        </p>
+    
+    </main>
+    <footer>
+        <div id="footer">
         
         
-        #pointer {
-            position: absolute;
-            top:25vw;
-            left: 50vw;
-            width: 50px;
-            height: 50px;
-            border: 3px solid lightgreen;
-            border-radius: 50%;
-            filter: drop-shadow(1px 1px 1px black);
-            font-size: 1em;
-            line-height: calc(50px - 0.5em);
-            text-align: center;
-            opacity: 0;
-        }
-        
-
-    
-        .btn-none {
-            background-color: transparent;
-            border: none;
-            color: gray;
-            text-decoration: none;
-        }
-
-        #affiliation {
-            margin-top: 10px;
-            margin-bottom: 0;
-            padding-top: 30px;
-            padding-bottom: 30px;
-            text-align: center;
-            background-color: hsl(210,79%,30%);
-            color: hsl(234,67%,94%);
-            text-decoration: none;
-            text-decoration-color: darkkhaki;
-        }
-    </style>
-  <body>
-      
-   
-
-    <div class="jumbotron" style="background-color: hsl(210,79%,30%);">
-        <h1 style="color: hsl(234,67%,94%)">Unswayed </h1>
-        <p style="color: hsl(234,67%,94%)"> For people who want to know the actual story on a topic </p>
-         <a class="btn btn-info btn-lg" href="#" role="button"> Open Web App </a>
-        <hr> 
-          <p style="color: hsl(234,67%,94%)"> <b>Unswayed</b> is an app that will allow you to look up current topics that are happening in the world and give you it without <b> bias opinions </b> like the ones you would hear on the news. This allows you to created your own opinion on a certain topic without someone telling you what to think </p>
-    </div>
-      
-     
-
-    
-        <div >
-          <img class="d-block w-100" src="./unswayed.png">
-          </div>
-   
-
-<div class="container">
-    
-    <div class="row">
-      <div class="col-sm-4">
-          <a class="btn btn-link" role="button" data-toggle="collapse" data-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">
-          <img src="thinking.png" width="200" height="200" class="figure-img img-fluid rounded" alt="Curioxity Explorer point to know feature"><br>Think
-        </a>
-      </div>
-        <div class="col-sm-4">  
-        <a class="btn btn-link" role="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">
-            <img src="search.png" width="200" height="200" class="figure-img img-fluid rounded" alt="Curioxity Explorer Capture the moment feature"> <br> Search
-        </a>
-        </div>
-          <div class="col-sm-4 ">
-        <a class="btn btn-link" role="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">
-            <img src="know.png" width="200" height="200" class="figure-img img-fluid rounded" alt="Curioxity Explorer Collect and Share feature"> <br> Learn
-        </a>
-        </div>
-    </div>
-    
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="collapse multi-collapse" id="multiCollapseExample1">
-          <div class="card card-body">
-            Think of a particular topic that you have heard on the news that you want to know more about.
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="collapse multi-collapse" id="multiCollapseExample2">
-          <div class="card card-body">
-            Search for that particular topic on the app and read about the topic so you can get more knowledge on what the topic is about without bias opinions.
-          </div>
-        </div>
-      </div>
-    <div class="col-sm-4">
-        <div class="collapse multi-collapse" id="multiCollapseExample3">
-          <div class="card card-body">
-            Learn about the particular topics and create your own opinion on the topic since you have now read the information without any bias views.
-          </div>
-        </div>
-      </div>
-    </div>
-</div>    
-
-
-   
-
-
-<hr> 
-      
-<div class="container-fluid" style="margin-top: 50px;">
-<h3> Design process </h3>
-    <h6> : how this app has been designed and developed </h6>
-<div class="accordion" id="accordionExample">
-  <div class="card">
-    <div class="card-header" id="headingOne">
-      <h5 class="mb-0">
-        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-           User Research (Interview)
-        </button>
-      </h5>
-    </div>
-
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-      <div class="card-body">
-        I asked my boyfriend Connor the following questions: 
-          <br>
-          <br> <b>What do you think social fabric means? </b><br>
-        What holds a society together. Such as culture, religion, government, beliefs, and morals. <br><br>
-          <b>When thinking about something more specific like education, how does social fabric have to do with that?</b><br>
-          We as a country are a very educated group, so we require everyone to go to school to get an education, to further grow our society/ country.<br><br>
-          <b>Do you think we can strenghten the social fabric involving education with media?</b><br>
-          Yes, but we can not be bias. Which will never happen in todays society. But people grow up hearing the media and then they are being educated on the bias opinions. If we want to improve, we need to have people think for themselves and not just repeat what they hear like puppets. <br> <br>
-          <b> If you were creating an app to fix this situation, what would it be?</b><br>
-          An app that is both liberal and conservative so that both sides can be heard and the media isn't changing the story to make it fit into their agenda or narritve. <br> <br> <br> <br>
-          
-          <b> Affinity Wall</b><br><br>
-          <img src="./notes.png" style="width: 400px">
-        
-           
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingTwo">
-      <h5 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Brainstorming
-        </button>
-      </h5>
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-      <div class="card-body">
-        <p> <b> How We Questions </b><br> <br>
-            Insight: Bringing people together to better the community <br>
-            How Might We: Make the news not bias?<br> <br>
             
-            Insight: Both sides of the story <br>
-            How Might We: Show both sides?<br><br>
-            
-            Insight: Making sure people have knowledge on topics<br>
-            How Might We: Get out the right information for people to see? <br> <br><br> <br>
-            
-            <b> Persona</b><br><br>
-            <img src="./connor.png" style="width:200px"><br>
-            Name: Connor Howard <br>
-            Demographic Data: 20 years old, Male, Student <br>
-            Skills/Interest/Personality: Is interested in things going on in the world and politics, has a very strong and outgoing personality, and the skills that he has is very minimal because he is younger <br>
-            Goal and tasks: Make it appealing to this type of audience and make it so that they can look up things that are not bias 
-
-          
-          
-          
-          </p>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingThree">
-      <h5 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Ideation 
-        </button>
-      </h5>
-    </div>
-    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-      <div class="card-body">
-        <img src="./storyboard1.png" style="width:400px">
-        <img src="./storyboard2.png" style="width: 400px">
-      </div>
-    </div>
-  </div>
-    
-      <div class="card">
-    <div class="card-header" id="headingFour">
-      <h5 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-          Wireframes + Workflow 
-        </button>
-      </h5>
-    </div>
-    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-      <div class="card-body">
-        per each menu feature (from the start to the complete), show the flows
-      </div>
-    </div>
-  </div>
-    
-    <div class="card">
-    <div class="card-header" id="headingFive">
-      <h5 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-           Graphical User Interface 
-        </button>
-      </h5>
-    </div>
-    <div id="collapseFive" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
-      <div class="card-body">
-       Pick the template you want to use. Draw the screens with different graphical theme, layout + typography + color scheme (color usually tested at the last step), then get the icons if you want (reference color) and share the screens by theme to compare (such as optionA vs. optionB) 
-
-      </div>
-    </div>
-  </div>
-    
-        <div class="card">
-    <div class="card-header" id="headingSeven">
-      <h5 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-          Create a pitch 
-        </button>
-      </h5>
-    </div>
-    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
-      <div class="card-body">
-       Pick the template you want to use. Draw the screens with different graphical theme, layout + typography + color scheme (color usually tested at the last step), then get the icons if you want (reference color) and share the screens by theme to compare (such as optionA vs. optionB) 
-
-      </div>
-    </div>
-  </div>
-    
-</div>
-
-      
-<hr>
-
-
-    <h3 style="margin-top: 50px;">  Pitch Video Presentation </h3>
-     
-    <div class="card" style="width: 100%; border-style: none">
-    <div class="card-body">
-      This video will show you how to use the app -  
-    </div>
-        <figure class="figure text-center">
-              <iframe src="" width="100%" height="800"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen  alt="Final pitch presenation video">
-            </iframe>
-             
-            </figure>
- 
-    </div>
-
-    
- </div> 
+        </div>
+    </footer>
     
     
-<footer id="affiliation"> 
-
-        <address>
-        <small>
-            <b> Alyssa Anderson </b>
-            <br>
-        <strong> MIN 240-001 </strong><br>
-        </small>
-        </address>
+    </div>   
     
- </footer>
-      
-    <!-- Optional JavaScript -->
+     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    
-  </body>
+</body>
 </html>
