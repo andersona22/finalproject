@@ -1,90 +1,291 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content>
-    <meta name="generator" content="Jekyll v3.8.5">
-    <title> Unswayed </title>
-      <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/cover/">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-    <title>Unswayed</title>
-  
-<style>
-    body {
-        background-color: hsl(210,79%,30%);
-        color: white;
+<html>
+<style> 
+    #startScreen {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background-image: url(./whitehouse.jpg);
+        background-repeat: none;
+        background-size: cover;
+        padding: none;
+        background-blend-mode: overlay;
+        /* display: none; /* block */
+        
     }
-    .bd-placeholder-img{
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
+    
+    #gameScreen {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-image: url(./whitehouse.jpg);
+        display: none;
+        background-size: cover;
+        background-blend-mode: overlay;
+        
+    }
+    
+    #endScreen {
+       position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-image: url(./whitehouse.jpg);
+        display: none;
+        background-size: cover;
+        background-blend-mode: overlay;
+    }
+    
+    #searchBTN {
+        position: absolute;
+        top: 5%;
+        left: 43%;
+        width: 9%;
+        height: 5%;
+        cursor: pointer;
         user-select: none;
-    }
-    @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-            font-size: 3.5rem;
-        }
+        font-family: 'Nunito', sans-serif;
+        border-radius: 11px;
+        background-color: gray;
     }
     
-    @keyframes news {
-     from{opacity: 0;}
-        to{opacity:1;}}
+
+    #headlines{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-image: url(./whitehouse.jpg);
+        display: none;
+        background-size: cover;
+        background-blend-mode: overlay;
     }
     
-    #footer {
-        background-image: url(./breakingnews.png);
-        width: 70px;
-        height: 30px;
-        animation: news 1s infinite;
+    #workflowBTN {
+        position: absolute;
+        top: 5%;
+        left: 57%;
+        width:12%;
+        height: 5%;
+        cursor: pointer;
+        color: white;
+        user-select: none;
+        font-family: 'Nunito', sans-serif;
+        border-radius: 11px;
+        background-color: gray;
+    }
+     #aboutBTN {
+        position: absolute;
+        top: 5%;
+        left: 29%;
+        width:8%;
+        height: 5%;
+        cursor: pointer;
+        color: white;
+        user-select: none;
+        font-family: 'Nunito', sans-serif;
+        border-radius: 11px;
+        background-color: gray;
+    }
+    
+    
+    #homeBTN {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        width: 10%;
+        height: 6%;
+        cursor: pointer;
+        border-radius: 11px;
+        background-color: gray;
+       
+    }
+     #unswayed_logo {
+        background-image:url(./facebook.png);
+        position:absolute;
+        left:50%;
+        top:50vh;
+        width:300px;
+        height:300px;
+        background-size:contain;
+        opacity:0;
+        transform:translate(-50%, -50%);
+        animation: loading 6s ease-out infinite;
+    }
+    
+     @keyframes loading{
+        0%{width:300px;height:300px; opacity:1;}
+        50%{width:400px;height:400px;opacity:1;}
+        100%{width:300px;height:300px;opacity:1;}
+    }
+    
+    #headlinesInfo {
+        position: absolute;
+        top: 20%;
+        left: 11%;
+        width: 300px;
+        height: 500px;
+        color: white;
+        
+    }
+    
+    .headlinespoint{
+        cursor: pointer;
+        font-family: 'Nunito', sans-serif;
+        font-size: 1.5em;
+    }
+    
+    #headlinesPop{
+        position: absolute;
+        width: 300px;
+        height:50px;
+        color: hsl(210,79%,30%);
+        left: 60%;
+        top: 20%;
+        text-align: center;
+        font-family: 'Nunito', sans-serif;
+        font-size: 4em;
+        animation: loading 6s ease-out infinite;
+        
     }
 </style>
-    <link href="cover.css" rel="stylesheet">
-    </head>
-<body class="text-center">
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+
+<body>
+<div id="startScreen"> 
     
-    <header class="masthead mb-auto">
-        <div class="inner">
-            <h1 class="masthead-brand"> Unswayed </h1>
-            <nav class="nav nav-masthead justify-content-center">
-                <a class="nav-link active" href="#"> Home </a>
-                <a class="nav-link" href="#"> Features </a>
-                <a class="nav-link" href="#"> Contact </a> <br> <br> <br>
-            
-            
-            </nav>       
-        </div>
-    </header>
-    <main role="main" class="inner cover">
-        <h1 class="cover-heading"> Get Unbias News Here.</h1>
-        <p class="lead">
-        Unswayed lets you read about news and current topics without any bias opinions so you can create your own opinion </p>
-        <p class="lead">
-            <a href="#" class="btn btn-lg btn-secondary"> Search News </a> <br> <br> <br> <br>
-        </p>
+    <div id="unswayed_logo"></div>
+    <div id="aboutBTN"></div>
+    <div id="searchBTN"></div>
+    <div id="workflowBTN"></div>
+    </div>
     
-    </main>
-    <footer>
-        <div id="footer">
+<div id="headlines">
+        
+        <div id="headlinesInfo">
+    <ol style="list-style: none;">
+        <li class="headlinespoint"> Abortion </li> <br> <br>
+        <li class="headlinespoint"> Gun Control </li> <br> <br>
+        <li class="headlinespoint"> Fake News </li> <br> <br>
+        <li class="headlinespoint"> White House Burning </li> <br> <br>
+        <li class="headlinespoint"> Cat in Tree </li> <br> <br>
+        <li class="headlinespoint"> California Drought </li> <br> <br>  
+        <li class="headlinespoint"> Year Round School </li> <br> <br>  
+    </ol>
+    
+    </div>
+    <div id="homeBTN"></div>
+    <div id="headlinesPop"> Headlines </div>
+    </div>
+<div id="gameScreen"> 
+ 
+    </div>
+<div id="endScreen"> 
+    
+    </div>
+    
+    <script>
+        var myStartScreen;
+        myStartScreen =
+        document.querySelector("#startScreen");
+        
+        var myGameScreen;
+        myGameScreen = 
+        document.querySelector("#gameScreen");
+        
+        var myEndScreen;
+        myEndScreen = 
+        document.querySelector("#endScreen");
+        
+        var myHeadlinesScreen;
+        myHeadlinesScreen =
+            document.querySelector("#headlines");
+        
+        var mySearchBTN;
+        mySearchBTN =
+        document.querySelector("#searchBTN");
+        
+        var myAboutBTN;
+        myAboutBTN = 
+            document.querySelector("#aboutBTN");
         
         
-            
-        </div>
-    </footer>
+        mySearchBTN.innerHTML ="Search";
+        mySearchBTN.style.textAlign = "center";
+        mySearchBTN.style.color = "white";
+        mySearchBTN.style.fontSize= "2em";
+        mySearchBTN.addEventListener("click", hideStartShowGame, false);
+        
+         myAboutBTN.innerHTML ="About";
+        myAboutBTN.style.textAlign = "center";
+        myAboutBTN.style.color = "white";
+        myAboutBTN.style.fontSize= "2em";
+        myAboutBTN.addEventListener("click", showEndScreen, false);
+        
+       
+        
+        
+      
+        
+     
+        
+        
+      
+        
+   
     
+     
+        
+        function hideStartShowGame() {
+            myStartScreen.style.display= "none";
+            myGameScreen.style.display= "block";
+        }
     
-    </div>   
-    
-     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        function showEndScreen() {
+            myStartScreen.style.display= "none";
+            myEndScreen.style.display="block";
+        } 
+        
+        function showStartScreen() {
+            myEndScreen.style.display="none";
+            myStartScreen.style.display="block";
+        }
+        
+       
+        var myHeadlinesBTN;
+        myHeadlinesBTN = 
+            document.querySelector("#workflowBTN");
+         myHeadlinesBTN.innerHTML ="Headlines";
+        myHeadlinesBTN.style.textAlign = "center";
+        myHeadlinesBTN.style.color = "white";
+        myHeadlinesBTN.style.fontSize= "2em";
+        
+        myHeadlinesBTN.addEventListener("click", showHeadlinesScreen, false);
+        
+        function showHeadlinesScreen() {
+            myStartScreen.style.display="none";
+            myHeadlinesScreen.style.display="block";
+        }
+        
+        var myHomeBTN;
+        myHomeBTN = 
+             document.querySelector("#homeBTN");
+         myHomeBTN.innerHTML ="Home";
+        myHomeBTN.style.textAlign = "center";
+        myHomeBTN.style.color = "white";
+        myHomeBTN.style.fontSize= "2em";
+        
+        myHomeBTN.addEventListener("click", showHomeScreen, false);
+        
+        function showHomeScreen() {
+            myHeadlinesScreen.style.display="none";
+            myStartScreen.style.display="block";
+        }
+    </script>
+
 </body>
 </html>
