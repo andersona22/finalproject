@@ -121,16 +121,17 @@
         filter: drop-shadow(1px 1px 1px black);
     }
      #unswayed_logo {
-        background-image:url(./facebook.png);
+        background-image:url(./unswayed3.png);
         position:absolute;
         left:50%;
-        top:50vh;
+        top:60vh;
         width:300px;
-        height:300px;
+        height:200px;
         background-size:contain;
         opacity:0;
         transform:translate(-50%, -50%);
-        animation: loading 6s ease-out infinite;
+        background-repeat: no-repeat;
+        animation: loading2 6s ease-out infinite;
     }
     
      @keyframes loading{
@@ -138,7 +139,11 @@
         50%{width:500px;height:500px;opacity:1;}
         100%{width:400px;height:400px;opacity:1;}
     }
-    
+    @keyframes loading2{
+         0%{width:300px;height:300px; opacity:1;}
+        50%{width:350px;height:350px;opacity:1;}
+        100%{width:300px;height:300px;opacity:1;}
+    }
     #headlinesInfo {
         position: absolute;
         top: 20%;
@@ -357,6 +362,20 @@
     #submitBTN:hover{
         filter: drop-shadow(2px 2px 2px black);
     }
+    
+    #unswayedlogo2{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: 85%;
+        left: 45%;
+        background-image: url(./unswayed3.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    #unswayedlogo2:hover{
+        filter: drop-shadow(2px 2px 2px black);
+    }
 </style>
 
 <body>
@@ -384,6 +403,7 @@
     </div>
     <div id="homeBTN"></div>
     <div id="headlinesPop"> Headlines </div>
+    <div id="unswayedlogo2"></div>
     </div>
 <div id="gameScreen"> 
     <div id="homeBTN2"></div>
@@ -398,6 +418,7 @@
     
     
     </div>
+    <div id=unswayedlogo2></div>
     </div>
 <div id="endScreen"> 
     <div id="homeBTN3"></div>
@@ -409,6 +430,7 @@
             <input type="text" name="password" value="Password" class="password">
         </form>
     <div id="submitBTN"> Submit </div>
+    <div id="unswayedlogo2"></div>
     </div>
     
     <script>
