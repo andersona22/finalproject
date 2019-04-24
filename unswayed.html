@@ -1,7 +1,8 @@
 <html>
       <!-- Required meta tags -->
     <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -10,8 +11,8 @@
 <style> 
     #startScreen {
         position: absolute;
-        min-width: 100%;
-        min-height: 100%;
+        width: 100vw;
+        height: 100vh;
         top: 0;
         left: 0;
         background-image: url(./whitehouse.jpg);
@@ -27,8 +28,8 @@
         position: absolute;
         top: 0;
         left: 0;
-        min-width: 100%;
-        min-height: 100%;
+        width: 100vw;
+        height: 100vh;
         background-image: url(./whitehouse.jpg);
         display: none;
         background-size: cover;
@@ -40,8 +41,8 @@
        position: absolute;
         top: 0;
         left: 0;
-        min-width: 100%;
-        min-height: 100%;
+        width: 100%;
+        height: 100%;
         background-image: url(./whitehouse.jpg);
         display: none;
         background-size: cover;
@@ -52,7 +53,7 @@
         position: absolute;
         top: 5%;
         left: 43%;
-        min-width: 9%;
+        min-width: 10%;
         min-height: 6%;
         cursor: pointer;
         user-select: none;
@@ -69,8 +70,8 @@
         position: absolute;
         top: 0;
         left: 0;
-        min-width: 100vw;
-        min-height: 100vh;
+        width: 100vw;
+        height: 100vh;
         background-image: url(./whitehouse.jpg);
         display: none;
         background-size: cover;
@@ -81,7 +82,7 @@
         position: absolute;
         top: 5%;
         left: 59%;
-        min-width:12%;
+        min-width:13%;
         min-height: 6%;
         cursor: pointer;
         color: white;
@@ -98,7 +99,7 @@
         position: absolute;
         top: 5%;
         left: 27%;
-        min-width:10%;
+        min-width:11%;
         min-height: 6%;
         cursor: pointer;
         color: white;
@@ -160,6 +161,7 @@
         height: 500px;
         color: white;
         text-decoration: none;
+        text-align: center;
         
     }
     
@@ -170,13 +172,13 @@
         font-size: 1.5em;
         text-decoration: none;
         color: white;
-         text-align: center;
     }
     
     .headlinespoint:hover {
         background-color: gray;
         border-radius: 5px;
         filter: drop-shadow(1px 1px 1px black);
+        text-align: center;
         
     }
     
@@ -224,8 +226,8 @@
     }
        #searchPop{
         position: absolute;
-        min-width: 400px;
-        min-height:50px;
+        width: 400px;
+        height:50px;
         color: hsl(210,79%,30%);
         left: 60%;
         top: 20%;
@@ -335,8 +337,8 @@
     
     .password {
         position: absolute;
-        min-width: 400px;
-        min-height: 45px;
+        width: 400px;
+        height: 45px;
         left: 5%;
         top: 40%;
         background-color: hsla(360, 100%, 100%, 0.2);
@@ -375,8 +377,8 @@
     
     #unswayedlogo2{
         position: absolute;
-        min-width: 100px;
-        min-height: 100px;
+        width: 100px;
+        height: 100px;
         top: 85%;
         left: 45%;
         background-image: url(./unswayed3.png);
@@ -390,9 +392,8 @@
 
 <body>
 <div id="startScreen"> 
-   
+    
     <div id="unswayed_logo"></div>
-     <div class="align-items-start">
     <div id="aboutBTN"></div>
     <div id="searchBTN"></div>
     <div id="workflowBTN"></div>
