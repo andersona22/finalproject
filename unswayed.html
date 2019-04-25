@@ -1,3 +1,4 @@
+
 <html>
       <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -41,8 +42,8 @@
        position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
         background-image: url(./whitehouse.jpg);
         display: none;
         background-size: cover;
@@ -68,14 +69,15 @@
 
     #headlines{
         position: absolute;
-        top: 0;
-        left: 0;
+        top: 0%;
+        left: 0%;
         width: 100vw;
         height: 100vh;
         background-image: url(./whitehouse.jpg);
         display: none;
         background-size: cover;
         background-blend-mode: overlay;
+        padding: none;
     }
     
     #workflowBTN {
@@ -184,8 +186,8 @@
     
     #headlinesPop{
         position: absolute;
-        width: 300px;
-        height:50px;
+        min-width: 300px;
+        min-height:50px;
         color: hsl(210,79%,30%);
         left: 60%;
         top: 20%;
@@ -225,9 +227,9 @@
         filter: drop-shadow(1px 1px 1px black);
     }
        #searchPop{
-        position: absolute;
-        width: 400px;
-        height:50px;
+        position: relative;
+        min-width: 400px;
+        min-height:50px;
         color: hsl(210,79%,30%);
         left: 60%;
         top: 20%;
@@ -337,8 +339,8 @@
     
     .password {
         position: absolute;
-        width: 400px;
-        height: 45px;
+        min-width: 400px;
+        min-height: 45px;
         left: 5%;
         top: 40%;
         background-color: hsla(360, 100%, 100%, 0.2);
@@ -388,19 +390,41 @@
     #unswayedlogo2:hover{
         filter: drop-shadow(2px 2px 2px black);
     }
+    
+    @media only screen and (max-width: 768px) {
+        #startscreen {background-image: url(./whitehouse.jpg); height: 700px;}
+        #aboutBTN {min-width: 3px; min-height: 3px; left:32%; font-size: 0.5em; }
+        #searchBTN {min-width: 3px; min-height: 3px; top:15%; left: 35%; font-size: 0.5em;}
+        #workflowBTN {min-width: 3px; min-height: 3px; top:25%; left: 30%; font-size: 0.5em;}
+        #headlines {background-image: url(./whitehouse.jpg); height: 2000px; }
+        #homeBTN {min-width: 3px; min-height: 3px; top: 5px; }
+        #unswayedlogo2{top: 80%; left: 35%;}
+        #headlinesInfo{top: 6%; left: 3%;}
+        #headlinesPop{top: 2%; left: -12%;}
+        #homeBTN2{min-width: 3px; min-height: 3px; top: 5px;}
+        #searchPop{top: 9%; left: -12%; }
+        .search{left: 5%; min-width: 50px; min-height: 20px;}
+        #enterBTN{left: 60%; }
+        .email{left: 5%; min-width: 50px; min-height: 20px;top: 30%;}
+        .username{left: 5%; min-width: 50px; min-height: 20px;top: 40%;}
+        .password{left: 5%; min-width: 50px; min-height: 20px;top: 50%;}
+        #submitBTN{left: 60%; top: 60%;}
+        #accountPop{top: 11%; left: -12%;}
+        
+    }
+    
 </style>
 
 <body>
 <div id="startScreen"> 
-    
     <div id="unswayed_logo"></div>
     <div id="aboutBTN"></div>
-    <div id="searchBTN"></div>
-    <div id="workflowBTN"></div>
-    </div>
+    <div id="searchBTN"></div> 
+    <div id="workflowBTN"></div> 
+</div>
+   
     
 <div id="headlines">
-        
         <div id="headlinesInfo">
     <ol style="list-style: none;">
         <li class="headlinespoint">Abortion </li> <br> <br>
@@ -411,14 +435,19 @@
         <li class="headlinespoint"> California Drought </li> <br> <br>
         <li class="headlinespoint"> Year Round School </li> <br> <br>  
     </ol>
+             
+            </div>
+            <div id="unswayedlogo2"></div>
     
-    </div>
     <div id="homeBTN"></div>
     <div id="headlinesPop"> Headlines </div>
-    <div id="unswayedlogo2"></div>
+    
     </div>
 <div id="gameScreen"> 
+
     <div id="homeBTN2"></div>
+     
+    
     <div id="searchPop"> Search News </div>
     <div id="enterBTN"> Enter </div>
     <div>
